@@ -1,0 +1,20 @@
+{
+  "name": "smi-common-ui",
+  "version": "1.0.1",
+  "homepage": "https://github.com/PeeWee2201/smi-ui",
+  "description": "SMI common UI module",
+  "main": "",
+  "keywords": [
+    "SMI"
+  ],
+  "dependencies": {
+    "angular": "~1.5.8",
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
