@@ -1,7 +1,7 @@
 {
   "name": "smi-common-ui",
-  "version": "1.0.3",
-  "homepage": "https://github.com/PeeWee2201/smi-ui",
+  "version": "1.0.4",
+  "homepage": "https://github.com/iba-smi/smi-common-ui",
   "description": "SMI common UI module",
   "main": "",
   "keywords": [
