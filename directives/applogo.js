@@ -1,10 +1,22 @@
 (function () {
    'use strict';
-   angular.module('smiZeppelinFacadeApp')
+   angular.module('iba-smi.smi-common-ui', [])
+   .factory('VersionResource', ['$http',
+      function($http) {
+         var versionService= {
+            getAppVersion: function() {
+               var promise = $http.get('rest/version/app').then(function (response) {
+                  return response.data;
+               });
+               return promise;
+            }
+         }
+      return versionService;
+   }])
    .directive('smiAppLogo', ['VersionResource', function(VersionResource) {
       return {
          restrict: 'E',
-         templateUrl: 'directives/applogo.html',
+         templateUrl: 'bower_components/smi-common-ui/directives/applogo.html',
          scope: {
             appName: '@'
          },
